@@ -1,4 +1,4 @@
-# leaflet-practice
+# leaflet
 
 ## Project setup
 ```
