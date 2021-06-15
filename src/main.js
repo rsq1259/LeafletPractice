@@ -6,6 +6,9 @@ import ElementUI from "element-ui";
 
 Vue.use(ElementUI);
 
+// 引入样式
+import "./css/overview.css";
+
 Vue.config.productionTip = false;
 
 new Vue({
