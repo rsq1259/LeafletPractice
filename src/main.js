@@ -6,6 +6,10 @@ import ElementUI from "element-ui";
 
 Vue.use(ElementUI);
 
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+Vue.prototype.L = L;
+
 // 引入样式
 import "./css/overview.css";
 
