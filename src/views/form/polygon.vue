@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "Polygon",
+  name: "PolygonForm",
   data() {
     return {};
   },

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "Polyline",
+  name: "PolylineForm",
   data() {
     return {};
   },

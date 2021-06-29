@@ -4,7 +4,7 @@
       <Header />
     </header>
     <div class="content">
-      <div class="menu-wraper">
+      <div v-show="isShowMenu" class="menu-wraper">
         <router-view></router-view>
       </div>
       <div class="map-wraper">
@@ -14,6 +14,7 @@
   </div>
 </template>
 <script>
+import { mapState } from "vuex";
 import Header from "@/components/Header";
 import Map from "../map";
 export default {
@@ -25,6 +26,10 @@ export default {
   data() {
     return {};
   },
+  computed: mapState("map", ["isShowMenu"]),
+  watch: {},
+  created() {},
+  methods: {},
 };
 </script>
 
@@ -35,20 +40,20 @@ export default {
   position: relative;
   .header {
     width: 100%;
-    height: 60px;
+    height: $title-height;
     background-color: #fff;
-    border-bottom: 1px solid #ece1e1;
+    border-bottom: $border;
     // position: absolute;
   }
   .content {
     display: flex;
     width: 100%;
-    height: calc(100vh - 61px);
+    height: calc(100vh - #{$title-height} - 1px);
     .menu-wraper {
       width: 20vw;
       min-width: 150px;
       height: 100%;
-      border-right: 1px solid #ece1e1;
+      border-right: $border;
     }
     .map-wraper {
       height: 100%;

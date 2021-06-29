@@ -28,8 +28,8 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  height: 60px;
-  line-height: 60px;
+  height: $title-height;
+  line-height: $title-height;
   width: 100%;
   display: flex;
   justify-content: space-between;

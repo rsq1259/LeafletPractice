@@ -1,0 +1,16 @@
+// 定义公共样式
+$border-color: #ece1e1;
+$tip-color: #33333396;
+$danger-color: #f56c6c;
+$background-dark: #00000066;
+$background-light: #ffffff8f;
+$border:1px solid $border-color;
+$title-height: 60px;
+$tool-height: 42px;
+
+.vertical-middle{
+  vertical-align: middle;
+}
+.pointer{
+  cursor: pointer;
+}
